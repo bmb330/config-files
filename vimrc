@@ -8,6 +8,7 @@ Bundle 'altercation/vim-colors-solarized'
 " Bundle 'sjl/badwolf'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
+Bundle 'mattn/emmet-vim'
 
 " No plugins after this line
 
@@ -20,9 +21,22 @@ syntax on
 set incsearch
 set hlsearch
 
-" Tabs
+" Tabs, indent, wrap
 set tabstop=4
 set softtabstop=4
+set autoindent
+set copyindent
+set shiftwidth=4
+set smarttab
+set nowrap
+
+
+" Mouse
+set mouse=a
+set ttyfast
+
+" Buffer config
+set hidden
 
 " UI config
 set number
@@ -60,7 +74,7 @@ let g:airline#extensions#tabline#buffer_nr_show=1
 
 " Syntastic config
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%#warningmsg#
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
@@ -73,6 +87,9 @@ let g:syntastic_html_tidy_exec='tidy5'
 let g:syntastic_html_checkers=['tidy', 'jshint']
 let g:syntastic_css_checkers=['prettycss', 'csslint']
 let g:syntastic_javascript_checkers=['eslint', 'jshint']
+
+" Emmet config
+let g:user_emmet_expandabbr_key = '<c-e>'
 
 " Remap config
 nnoremap <leader><space> :nohlsearch<CR>
