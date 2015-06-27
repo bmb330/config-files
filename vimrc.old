@@ -2,27 +2,18 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-"call vundle#rc()
-call vundle#begin()
-Plugin 'gmarik/vundle'
-Plugin 'altercation/vim-colors-solarized'
-" Plugin 'sjl/badwolf'
-Plugin 'bling/vim-airline'
-Plugin 'scrooloose/syntastic'
-Plugin 'mattn/emmet-vim'
-Plugin 'Valloric/YouCompleteMe' 
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'pangloss/vim-javascript'
+call vundle#rc()
+
+Bundle 'altercation/vim-colors-solarized'
+" Bundle 'sjl/badwolf'
+Bundle 'bling/vim-airline'
+Bundle 'scrooloose/syntastic'
+Bundle 'mattn/emmet-vim'
 
 " No plugins after this line
-call vundle#end()
 
 filetype plugin indent on
-
-set exrc
+filetype plugin on
 
 syntax on
 
@@ -31,17 +22,17 @@ set incsearch
 set hlsearch
 
 " Tabs, indent, wrap
-set tabstop=2
-set softtabstop=2
+set tabstop=4
+set softtabstop=4
 set autoindent
 set copyindent
-set shiftwidth=2
+set shiftwidth=4
 set smarttab
 set nowrap
 
 
 " Mouse
-"set mouse=a
+set mouse=a
 set ttyfast
 
 " Buffer config
@@ -49,7 +40,6 @@ set hidden
 
 " UI config
 set number
-set relativenumber
 set cursorline
 set wildmenu
 set lazyredraw
@@ -99,14 +89,9 @@ let g:syntastic_css_checkers=['prettycss', 'csslint']
 let g:syntastic_javascript_checkers=['eslint', 'jshint']
 
 " Emmet config
-let g:user_emmet_expandabbr_key = '<c-j>'
+let g:user_emmet_expandabbr_key = '<c-e>'
 
 " Remap config
 nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <space> za
 
-" eclim settings
-"let g:EclimCompletionMethod='omnifunc'
-
-" youcompleteme config
-"let g:ycm_seed_identifiers_with_syntax=1
