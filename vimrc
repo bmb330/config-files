@@ -110,3 +110,4 @@ nnoremap <space> za
 
 " youcompleteme config
 "let g:ycm_seed_identifiers_with_syntax=1
+highlight Pmenu ctermfg=0 ctermbg=254
