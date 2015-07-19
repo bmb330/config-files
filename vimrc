@@ -16,6 +16,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'kien/ctrlp.vim'
 
 " No plugins after this line
 call vundle#end()
