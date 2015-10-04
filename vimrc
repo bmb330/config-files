@@ -17,6 +17,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 
 " No plugins after this line
 call vundle#end()
@@ -70,7 +71,8 @@ set foldmethod=indent
 " let g:badwolf_css_props_highlight = 1
 
 " Solarized colorshceme config
-set background=dark
+let g:solarized_termcolors=16
+set t_Co=256
 colorscheme solarized
 
 " Airline config
@@ -94,7 +96,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Syntastic config
-let g:syntastic_html_tidy_exec='tidy5'
+"let g:syntastic_html_tidy_exec='tidy5'
 let g:syntastic_html_checkers=['tidy', 'jshint']
 let g:syntastic_css_checkers=['prettycss', 'csslint']
 let g:syntastic_javascript_checkers=['eslint', 'jshint']
