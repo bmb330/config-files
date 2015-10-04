@@ -18,6 +18,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'gorodinskiy/vim-coloresque'
 
 " No plugins after this line
 call vundle#end()
@@ -71,6 +72,7 @@ set foldmethod=indent
 " let g:badwolf_css_props_highlight = 1
 
 " Solarized colorshceme config
+set background=dark
 let g:solarized_termcolors=16
 set t_Co=256
 colorscheme solarized
