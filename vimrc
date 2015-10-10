@@ -19,6 +19,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'tpope/vim-endwise'
+Plugin 'ervandew/supertab'
 
 " No plugins after this line
 call vundle#end()
