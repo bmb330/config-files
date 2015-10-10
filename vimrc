@@ -43,6 +43,7 @@ set copyindent
 set shiftwidth=2
 set smarttab
 set nowrap
+set expandtab
 
 
 " Mouse
