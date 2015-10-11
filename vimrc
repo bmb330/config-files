@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
+Plugin 'airblade/vim-gitgutter'
 
 " No plugins after this line
 call vundle#end()
