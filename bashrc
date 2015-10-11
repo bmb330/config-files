@@ -8,6 +8,9 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 #alias less='/usr/share/vim/vim74/macros/less.sh'
+alias v='nvim'
+alias s='python -m http.server'
+alias p='cd ~/Projects'
 
 #PS1='[\u@\h \W]\$ '
 #PS1='\[\e[0;34m\]\u\[\e[0;34m\]@\h:\[\e[0;35m\]\W ➔\[\e[0m\] '
