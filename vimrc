@@ -16,12 +16,15 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'Raimondi/delimitMate'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'gorodinskiy/vim-coloresque'
 Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'mxw/vim-jsx'
 
 " No plugins after this line
 call vundle#end()
@@ -103,9 +106,12 @@ let g:syntastic_check_on_wq = 0
 
 " Syntastic config
 "let g:syntastic_html_tidy_exec='tidy5'
-let g:syntastic_html_checkers=['tidy', 'jshint']
-let g:syntastic_css_checkers=['prettycss', 'csslint']
-let g:syntastic_javascript_checkers=['eslint', 'jshint']
+"let g:syntastic_html_checkers=['tidy', 'jshint']
+let g:syntastic_html_checkers=['tidy']
+"let g:syntastic_css_checkers=['prettycss', 'csslint']
+let g:syntastic_css_checkers=['prettycss']
+"let g:syntastic_javascript_checkers=['eslint', 'jshint']
+let g:syntastic_javascript_checkers=['eslint']
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-j>'
@@ -120,3 +126,6 @@ nnoremap <space> za
 " youcompleteme config
 "let g:ycm_seed_identifiers_with_syntax=1
 highlight Pmenu ctermfg=0 ctermbg=254
+
+" delimitMate config
+let delimitMate_expand_cr=1
