@@ -7,6 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/vundle'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'flazz/vim-colorschemes'
 " Plugin 'sjl/badwolf'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
@@ -81,7 +82,7 @@ set foldmethod=indent
 
 " Solarized colorshceme config
 set background=dark
-let g:solarized_termcolors=16
+"let g:solarized_termcolors=16
 set t_Co=256
 colorscheme solarized
 
