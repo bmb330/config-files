@@ -1,0 +1,21 @@
+"*":
+  welcome:
+    showOnStartup: false
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+  "linter-eslint": {}
+  "save-session":
+    dataSaveFolder: "/home/brandon/.atom/packages/save-session/projects"
+  core:
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
+    projectHome: "/home/brandon/Projects"
+  editor:
+    invisibles: {}
+    fontFamily: "Inconsolata-g"
+    fontSize: 12
