@@ -34,3 +34,5 @@ export WINEDEBUG=fixme-all
 
 source ~/.git-prompt.sh
 PS1='\[\e[0;34m\]\u\[\e[0;34m\]@\h:\[\e[0;35m\]\W\[\e[0;32m\]$(__git_ps1 " (%s)") \[\e[0;31m\]➔\[\e[0m\] '
+
+export TERM="xterm-256color"
