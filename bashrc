@@ -26,6 +26,8 @@ man() {
 	man "$@"
 }
 
+export ANDROID_HOME="/home/brandon/Android/Sdk"
+export PATH="/home/brandon/Android/Sdk/tools:/home/brandon/Android/Sdk/platform-tools:$PATH"
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
