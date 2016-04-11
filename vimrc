@@ -100,7 +100,7 @@ let g:airline#extensions#bufferline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
 
 " JavaScript Libraries Syntax config
-le g:used_javascript_libs = 'jquery,react'
+let g:used_javascript_libs = 'jquery,react'
 
 " Syntastic config
 set statusline+=%#warningmsg#
