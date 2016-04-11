@@ -1,0 +1,8 @@
+{
+  "defs": [
+    "browser",
+    "jquery",
+    "ecma5",
+    "ecma6"
+  ]
+}
