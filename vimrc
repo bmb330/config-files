@@ -15,8 +15,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'Valloric/YouCompleteMe' 
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
-Plugin 'keith/rspec.vim'
-Plugin 'jelera/vim-javascript-syntax'
+"Plugin 'jelera/vim-javascript-syntax'
+Plugin 'othree/yajs.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
@@ -27,6 +27,8 @@ Plugin 'tpope/vim-endwise'
 Plugin 'ervandew/supertab'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mxw/vim-jsx'
+Plugin 'elzr/vim-json'
+Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'tpope/vim-surround'
 
 " No plugins after this line
@@ -96,6 +98,9 @@ let g:airline#extensions#tabline#fnamemod=':t'
 let g:airline_detect_modified=1
 let g:airline#extensions#bufferline#enabled=1
 let g:airline#extensions#tabline#buffer_nr_show=1
+
+" JavaScript Libraries Syntax config
+le g:used_javascript_libs = 'jquery,react'
 
 " Syntastic config
 set statusline+=%#warningmsg#
