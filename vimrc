@@ -133,6 +133,7 @@ nnoremap <space> za
 
 " youcompleteme config
 "let g:ycm_seed_identifiers_with_syntax=1
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 highlight Pmenu ctermfg=0 ctermbg=254
 
 " delimitMate config
