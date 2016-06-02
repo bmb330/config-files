@@ -16,7 +16,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 "Plugin 'jelera/vim-javascript-syntax'
-Plugin 'othree/yajs.vim'
+"Plugin 'othree/yajs.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
@@ -30,6 +30,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'elzr/vim-json'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'ternjs/tern_for_vim'
 
 " No plugins after this line
 call vundle#end()
@@ -120,6 +121,8 @@ let g:syntastic_html_checkers=['tidy']
 let g:syntastic_css_checkers=['prettycss']
 "let g:syntastic_javascript_checkers=['eslint', 'jshint']
 let g:syntastic_javascript_checkers=['eslint']
+
+let g:syntastic_ruby_checkers=['mri', 'rubocop']
 
 " Emmet config
 let g:user_emmet_expandabbr_key = '<c-j>'
